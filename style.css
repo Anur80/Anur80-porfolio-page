@@ -501,15 +501,11 @@ footer {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .project-img {
@@ -524,35 +520,35 @@ footer {
 
 .project-content {
     position: relative;
-    padding: 1.5rem;
+    padding: 1.2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
+    gap: 0.8rem;
 }
 
 .project-links {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     margin-top: auto;
-    padding-top: 1rem;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    padding: 0.8rem 0 0;
 }
 
 .project-link {
     color: var(--light-black);
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 50%;
-    background: #f5f5f5;
+    background: #f8f8f8;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .project-link:hover {
@@ -563,7 +559,7 @@ footer {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .project-content h3 {
@@ -579,21 +575,27 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .project-tag {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     color: var(--light-black);
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 20px;
     font-size: 0.85rem;
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
+    margin: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .project-tag:hover {
@@ -1194,15 +1196,11 @@ footer {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .project-img {
@@ -1217,35 +1215,35 @@ footer {
 
 .project-content {
     position: relative;
-    padding: 1.5rem;
+    padding: 1.2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
+    gap: 0.8rem;
 }
 
 .project-links {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     margin-top: auto;
-    padding-top: 1rem;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    padding: 0.8rem 0 0;
 }
 
 .project-link {
     color: var(--light-black);
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 50%;
-    background: #f5f5f5;
+    background: #f8f8f8;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .project-link:hover {
@@ -1256,7 +1254,7 @@ footer {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .project-content h3 {
@@ -1272,21 +1270,27 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .project-tag {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     color: var(--light-black);
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 20px;
     font-size: 0.85rem;
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
+    margin: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .project-tag:hover {
@@ -1494,12 +1498,12 @@ footer {
 
 /* Contact Page Styles */
 .contact-section {
-    padding: 6rem 2rem;
-    min-height: 100vh;
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px);
     background-color: var(--white);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -1533,8 +1537,10 @@ footer {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    gap: 3rem;
+    align-items: flex-start;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .contact-left {
@@ -1557,10 +1563,10 @@ footer {
 }
 
 .contact-info {
-    background-color: #f0f0ff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--violet);
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info h3 {
@@ -1620,12 +1626,13 @@ footer {
 
 .form-group input,
 .form-group textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
 }
 
 .form-group input:focus,
@@ -1638,15 +1645,15 @@ footer {
     background-color: var(--violet);
     color: var(--white);
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
+    padding: 1rem 2rem;
+    border-radius: 8px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 200px;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    width: auto;
+    min-width: 150px;
 }
 
 .send-button:hover {
@@ -1805,6 +1812,73 @@ footer {
         width: 100%;
     }
 
+    /* Services Page Mobile Styles */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .services-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Projects Page Mobile Styles */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Contact Page Mobile Styles */
+    .contact-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .contact-left, .contact-right {
+        padding: 1.5rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Blog Page Mobile Styles */
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .blog-header h2 {
+        font-size: 2rem;
+    }
+
+    /* About Page Mobile Styles */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .about-header h2 {
+        font-size: 2rem;
+    }
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
     }
@@ -1853,7 +1927,7 @@ footer {
     .copyright {
         order: 3;
     }
-}
+
 
 .animated-heading {
     min-height: 160px;
@@ -2129,15 +2203,11 @@ footer {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .project-img {
@@ -2152,35 +2222,35 @@ footer {
 
 .project-content {
     position: relative;
-    padding: 1.5rem;
+    padding: 1.2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
+    gap: 0.8rem;
 }
 
 .project-links {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     margin-top: auto;
-    padding-top: 1rem;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    padding: 0.8rem 0 0;
 }
 
 .project-link {
     color: var(--light-black);
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 50%;
-    background: #f5f5f5;
+    background: #f8f8f8;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .project-link:hover {
@@ -2191,7 +2261,7 @@ footer {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .project-content h3 {
@@ -2207,21 +2277,27 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .project-tag {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     color: var(--light-black);
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 20px;
     font-size: 0.85rem;
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
+    margin: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .project-tag:hover {
@@ -2429,12 +2505,12 @@ footer {
 
 /* Contact Page Styles */
 .contact-section {
-    padding: 6rem 2rem;
-    min-height: 100vh;
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px);
     background-color: var(--white);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -2468,8 +2544,10 @@ footer {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    gap: 3rem;
+    align-items: flex-start;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .contact-left {
@@ -2492,10 +2570,10 @@ footer {
 }
 
 .contact-info {
-    background-color: #f0f0ff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--violet);
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info h3 {
@@ -2555,12 +2633,13 @@ footer {
 
 .form-group input,
 .form-group textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
 }
 
 .form-group input:focus,
@@ -2573,15 +2652,15 @@ footer {
     background-color: var(--violet);
     color: var(--white);
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
+    padding: 1rem 2rem;
+    border-radius: 8px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 200px;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    width: auto;
+    min-width: 150px;
 }
 
 .send-button:hover {
@@ -2740,6 +2819,73 @@ footer {
         width: 100%;
     }
 
+    /* Services Page Mobile Styles */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .services-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Projects Page Mobile Styles */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Contact Page Mobile Styles */
+    .contact-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .contact-left, .contact-right {
+        padding: 1.5rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Blog Page Mobile Styles */
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .blog-header h2 {
+        font-size: 2rem;
+    }
+
+    /* About Page Mobile Styles */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .about-header h2 {
+        font-size: 2rem;
+    }
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
     }
@@ -2788,7 +2934,7 @@ footer {
     .copyright {
         order: 3;
     }
-}
+
 
 .animated-heading {
     min-height: 160px;
@@ -3064,15 +3210,11 @@ footer {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .project-img {
@@ -3087,35 +3229,35 @@ footer {
 
 .project-content {
     position: relative;
-    padding: 1.5rem;
+    padding: 1.2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
+    gap: 0.8rem;
 }
 
 .project-links {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     margin-top: auto;
-    padding-top: 1rem;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    padding: 0.8rem 0 0;
 }
 
 .project-link {
     color: var(--light-black);
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 50%;
-    background: #f5f5f5;
+    background: #f8f8f8;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .project-link:hover {
@@ -3126,7 +3268,7 @@ footer {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .project-content h3 {
@@ -3142,21 +3284,27 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .project-tag {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     color: var(--light-black);
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 20px;
     font-size: 0.85rem;
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
+    margin: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .project-tag:hover {
