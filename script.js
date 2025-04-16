@@ -102,7 +102,6 @@ function renderContactPage() {
         // Create contact page HTML structure
         contactSection.innerHTML = `
             <div class="contact-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
-<<<<<<< HEAD
                 <div class="contact-header" style="text-align: left; margin-bottom: 2rem;">
                     <h1 style="color: var(--violet); font-size: 1.5rem; margin-bottom: 0.5rem;">CONTACT</h1>
                     <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Get in Touch</h2>
@@ -150,58 +149,6 @@ function renderContactPage() {
                                 <textarea id="message" name="message" rows="8" placeholder="Message" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 2rem;"></textarea>
                             </div>
                             <button type="submit" class="send-button" style="background: var(--violet); color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; width: 100%;">Send</button>
-=======
-                <div class="contact-header" style="text-align: center; margin-bottom: 3rem;">
-                    <h1>CONTACT</h1>
-                    <h2>Get in Touch</h2>
-                    <p>Feel free to reach out for freelancing opportunities, project collaborations, or just to say hello! 👋</p>
-                </div>
-                
-                <div class="contact-content" style="display: flex; flex-direction: column; gap: 3rem; max-width: 1000px; margin: 0 auto;">
-                    <div class="contact-info-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                        <div class="contact-left" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <div class="contact-info">
-                                <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; color: var(--violet);">Anur Mayiik</h3>
-                                <p style="margin-bottom: 1rem; font-size: 1.2rem;">Full Stack Web Developer & Designer</p>
-                                <p style="font-size: 1rem; line-height: 1.8; color: var(--light-black);">Got an idea you're eager to bring to life—whether it's a sleek and powerful website to boost your brand, eye-catching graphics to capture your audience, a digital marketing strategy to skyrocket your growth, or an e-commerce solution to turn clicks into conversions? Let's make it happen together. Reach out, and let's embark on this exciting journey to transform your vision into reality</p>
-                            </div>
-                            <div class="contact-social">
-                                <h3 style="margin-bottom: 1rem; color: var(--violet);">CONNECT WITH ME</h3>
-                                <div class="social-links" style="display: flex; gap: 1.5rem;">
-                                    <a href="https://github.com/Anur80" aria-label="GitHub" style="font-size: 1.5rem; background: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(103, 58, 183, 0.2); transition: all 0.3s ease; color: #333;"><i class="fab fa-github" style="transition: all 0.3s ease;"></i></a>
-                                    <a href="https://www.instagram.com/anuri_80?igsh=N21xdjluNjlrNnoy" aria-label="Instagram" style="font-size: 1.5rem; background: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(103, 58, 183, 0.2); transition: all 0.3s ease; color: #333;"><i class="fab fa-instagram" style="transition: all 0.3s ease;"></i></a>
-                                    <a href="https://www.linkedin.com/in/anur-mayiik-89a446311" aria-label="LinkedIn" style="font-size: 1.5rem; background: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(103, 58, 183, 0.2); transition: all 0.3s ease; color: #333;"><i class="fab fa-linkedin" style="transition: all 0.3s ease;"></i></a>
-                                    <a href="#" aria-label="Facebook" style="font-size: 1.5rem; background: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(103, 58, 183, 0.2); transition: all 0.3s ease; color: #333;"><i class="fab fa-facebook" style="transition: all 0.3s ease;"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    <div class="contact-right" style="background: #f8f9fa; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                <div class="form-group">
-                                    <label for="name" style="display: block; margin-bottom: 0.5rem;">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your name" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone" style="display: block; margin-bottom: 0.5rem;">Phone</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" style="display: block; margin-bottom: 0.5rem;">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email address" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" style="display: block; margin-bottom: 0.5rem;">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="Message subject" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
-                            </div>
-                            <div class="form-group">
-                                <label for="message" style="display: block; margin-bottom: 0.5rem;">Message</label>
-                                <textarea id="message" name="message" rows="6" placeholder="Your message here..." required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
-                            </div>
-                            <button type="submit" class="send-button" style="background: white; color: var(--violet); padding: 1rem 2rem; border: 1px solid var(--violet); border-radius: 4px; cursor: pointer; font-weight: 500; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 1rem; text-transform: uppercase; letter-spacing: 1px; position: relative; overflow: hidden;"><span style="position: absolute; left: -100%; top: 0; width: 100%; height: 100%; background: var(--violet); transition: left 0.3s ease; z-index: 0;" onmouseover="this.parentElement.querySelector('.button-text').style.color = 'white'; this.style.left = '0'" onmouseout="this.parentElement.querySelector('.button-text').style.color = 'var(--violet)'; this.style.left = '-100%'"></span><span class="button-text" style="position: relative; z-index: 1;">SHOOT <i class="fas fa-arrow-right"></i></span></button>
->>>>>>> 2d5a96d2de93265810b0d1b11bbe22d32030fb53
                         </form>
                     </div>
                 </div>
@@ -528,12 +475,8 @@ function renderBlogPage() {
     blogSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-<<<<<<< HEAD
 
         // Function to render the about page
-=======
-// Function to render the about page
->>>>>>> 2d5a96d2de93265810b0d1b11bbe22d32030fb53
 function renderAboutPage() {
     // Check if about section already exists
     let aboutSection = document.getElementById('about-section');
@@ -557,11 +500,7 @@ function renderAboutPage() {
                     <div style="margin-bottom: 2rem;">
                         <h2 style="font-family: Montserrat, sans-serif; font-weight: bold; border-bottom: 1px solid #333; display: inline-block; padding-bottom: 0.5rem;">About Me</h2>
                     </div>
-<<<<<<< HEAD
                     <h3 style="font-family: Montserrat, sans-serif; margin-bottom: 2rem; font-weight: 400; line-height: 1.6; padding: 1rem; background-color: #f8f8f8; border-left: 4px solid var(--violet);">I am a passionate Junior Developer and Brandist with expertise in creating engaging web experiences and compelling brand identities. My approach combines technical precision with creative innovation to deliver solutions that make a lasting impact.</h3>
-=======
-                    <p style="font-family: Montserrat, sans-serif; margin-bottom: 2rem;">I am a passionate Junior Developer and Brandist with expertise in creating engaging web experiences and compelling brand identities. My approach combines technical precision with creative innovation to deliver solutions that make a lasting impact.</p>
->>>>>>> 2d5a96d2de93265810b0d1b11bbe22d32030fb53
                     <div style="display: flex; gap: 1rem;">
                         <button style="padding: 1rem 2rem; background: white; border: 1px solid #333; border-radius: 5px; font-family: Montserrat, sans-serif; cursor: pointer;">Resume →</button>
                         <button style="padding: 1rem 2rem; background: white; border: 1px solid #333; border-radius: 5px; font-family: Montserrat, sans-serif; cursor: pointer;">Biography →</button>
@@ -645,166 +584,4 @@ function renderAboutPage() {
     aboutSection.style.display = 'block';
     
     // Scroll to top of about section
-<<<<<<< HEAD
     aboutSection.scrollIntoView({ behavior: 'smooth' });}
-=======
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
-        // Create about section if it doesn't exist
-        aboutSection = document.createElement('section');
-        aboutSection.id = 'about-section';
-        aboutSection.className = 'about-section';
-        
-        // Create about page HTML structure
-        aboutSection.innerHTML = `
-            <div class="about-container">
-                <div class="about-header">
-                    <h1>ABOUT ME</h1>
-                    <h2>Who I Am</h2>
-                    <p>Learn more about my journey and expertise in web development</p>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-left">
-                        <div class="profile-image">
-                            <img src="./Projects/passport_pic-removebg-preview.png" alt="Anur Mayiik">
-                        </div>
-                        <div class="profile-info">
-                            <h3>Anur Mayiik</h3>
-                            <p class="title">Full Stack Web Developer</p>
-                            <div class="profile-details">
-                                <p><strong>Experience:</strong> 3+ Years</p>
-                                <p><strong>Location:</strong> London, UK</p>
-                                <p><strong>Email:</strong> anur.mayiik@gmail.com</p>
-                            </div>
-                            <div class="profile-social">
-                                <a href="https://github.com/Anur80" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/anur-mayiik-89a446311" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/anuri_80?igsh=N21xdjluNjlrNnoy" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-right">
-                        <div class="about-section-content">
-                            <h3>My Journey</h3>
-                            <p>I am a passionate Full Stack Web Developer with a keen eye for design and a strong foundation in modern web technologies. My journey in web development began with a curiosity about how websites work, which quickly evolved into a professional career building innovative digital solutions.</p>
-                            
-                            <h3>Skills & Expertise</h3>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <h4>Frontend Development</h4>
-                                    <ul>
-                                        <li>HTML5 & CSS3</li>
-                                        <li>JavaScript (ES6+)</li>
-                                        <li>React.js</li>
-                                        <li>Vue.js</li>
-                                        <li>Responsive Design</li>
-                                    </ul>
-                                </div>
-                                <div class="skill-category">
-                                    <h4>Backend Development</h4>
-                                    <ul>
-                                        <li>Node.js</li>
-                                        <li>Python</li>
-                                        <li>PHP</li>
-                                        <li>RESTful APIs</li>
-                                        <li>Database Management</li>
-                                    </ul>
-                                </div>
-                                <div class="skill-category">
-                                    <h4>Tools & Technologies</h4>
-                                    <ul>
-                                        <li>Git & GitHub</li>
-                                        <li>Docker</li>
-                                        <li>AWS</li>
-                                        <li>MongoDB</li>
-                                        <li>MySQL</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <h3>Professional Philosophy</h3>
-                            <p>I believe in creating web solutions that not only look beautiful but also provide exceptional user experiences. My approach combines technical expertise with creative problem-solving to deliver projects that exceed expectations.</p>
-                            
-                            <div class="cta-section">
-                                <a href="#" class="cta-button" onclick="navigateTo('contact'); return false;">Let's Work Together</a>
-                                <a href="#" class="cta-button secondary" onclick="navigateTo('projects'); return false;">View My Work</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 3rem;">
-                    <button onclick="window.location.href='#'" style="background: white; color: #673AB7; padding: 0.75rem 2rem; border: 1px solid #673AB7; border-radius: 4px; cursor: pointer; font-weight: 300; transition: all 0.3s ease; width: 6cm;">View More →</button>
-                </div>
-            </div>
-        `;
-        
-        // Add the about section to the main container
-        mainContainer.appendChild(aboutSection);
-        
-        // Apply responsive styles using JavaScript
-        const applyResponsiveStyles = () => {
-            const isMobile = window.innerWidth <= 768;
-            
-            // About container styles
-            const aboutContainer = aboutSection.querySelector('.about-container');
-            Object.assign(aboutContainer.style, {
-                maxWidth: '1200px',
-                margin: '0 auto',
-                padding: isMobile ? '2rem 1rem' : '4rem 2rem'
-            });
-            
-            // About content styles
-            const aboutContent = aboutSection.querySelector('.about-content');
-            Object.assign(aboutContent.style, {
-                display: 'grid',
-                gridTemplateColumns: isMobile ? '1fr' : '300px 1fr',
-                gap: isMobile ? '2rem' : '4rem',
-                marginTop: '2rem'
-            });
-            
-            // Left section styles
-            const aboutLeft = aboutSection.querySelector('.about-left');
-            Object.assign(aboutLeft.style, {
-                backgroundColor: '#ffffff',
-                borderRadius: '15px',
-                padding: '2rem',
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-                textAlign: isMobile ? 'center' : 'left'
-            });
-            
-            // Right section styles
-            const aboutRight = aboutSection.querySelector('.about-right');
-            Object.assign(aboutRight.style, {
-                backgroundColor: '#ffffff',
-                borderRadius: '15px',
-                padding: '2rem',
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)'
-            });
-            
-            // Skills grid styles
-            const skillsGrid = aboutSection.querySelector('.skills-grid');
-            Object.assign(skillsGrid.style, {
-                display: 'grid',
-                gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
-                gap: '2rem',
-                marginTop: '1.5rem',
-                marginBottom: '2rem'
-            });
-        };
-        
-        // Apply initial styles
-        applyResponsiveStyles();
-        
-        // Add resize listener for responsive updates
-        window.addEventListener('resize', applyResponsiveStyles);
-    }
-    
-    // Display the about section
-    aboutSection.style.display = 'block';
-    
-    // Scroll to top of about section
-    
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
->>>>>>> 2d5a96d2de93265810b0d1b11bbe22d32030fb53
