@@ -516,16 +516,26 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--light-black);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-content {
     position: relative;
-    padding: 1.2rem;
+    padding: 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
-    gap: 0.8rem;
+    gap: 1rem;
+    min-height: 200px;
 }
 
 .project-links {
@@ -537,25 +547,25 @@ footer {
 }
 
 .project-link {
-    color: var(--light-black);
-    font-size: 1.2rem;
+    color: var(--black);
+    font-size: 1.4rem;
     padding: 0.8rem;
     border-radius: 50%;
-    background: #f8f8f8;
+    background: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 45px;
-    height: 45px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-link:hover {
     color: var(--violet);
     transform: translateY(-3px);
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .project-content {
@@ -575,9 +585,9 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
     justify-content: flex-start;
     align-items: center;
@@ -586,16 +596,17 @@ footer {
 .project-tag {
     background-color: #f5f5f5;
     color: var(--light-black);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
     font-size: 0.85rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     transition: all 0.3s ease;
     margin: 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    white-space: nowrap;
 }
 
 .project-tag:hover {
@@ -1211,16 +1222,26 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--light-black);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-content {
     position: relative;
-    padding: 1.2rem;
+    padding: 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
-    gap: 0.8rem;
+    gap: 1rem;
+    min-height: 200px;
 }
 
 .project-links {
@@ -1232,25 +1253,25 @@ footer {
 }
 
 .project-link {
-    color: var(--light-black);
-    font-size: 1.2rem;
+    color: var(--black);
+    font-size: 1.4rem;
     padding: 0.8rem;
     border-radius: 50%;
-    background: #f8f8f8;
+    background: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 45px;
-    height: 45px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-link:hover {
     color: var(--violet);
     transform: translateY(-3px);
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .project-content {
@@ -1270,9 +1291,9 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
     justify-content: flex-start;
     align-items: center;
@@ -1281,16 +1302,17 @@ footer {
 .project-tag {
     background-color: #f5f5f5;
     color: var(--light-black);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
     font-size: 0.85rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     transition: all 0.3s ease;
     margin: 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    white-space: nowrap;
 }
 
 .project-tag:hover {
@@ -2151,16 +2173,26 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--light-black);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-content {
     position: relative;
-    padding: 1.2rem;
+    padding: 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
-    gap: 0.8rem;
+    gap: 1rem;
+    min-height: 200px;
 }
 
 .project-links {
@@ -2172,25 +2204,25 @@ footer {
 }
 
 .project-link {
-    color: var(--light-black);
-    font-size: 1.2rem;
+    color: var(--black);
+    font-size: 1.4rem;
     padding: 0.8rem;
     border-radius: 50%;
-    background: #f8f8f8;
+    background: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 45px;
-    height: 45px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-link:hover {
     color: var(--violet);
     transform: translateY(-3px);
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .project-content {
@@ -2210,9 +2242,9 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
     justify-content: flex-start;
     align-items: center;
@@ -2221,16 +2253,17 @@ footer {
 .project-tag {
     background-color: #f5f5f5;
     color: var(--light-black);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
     font-size: 0.85rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     transition: all 0.3s ease;
     margin: 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    white-space: nowrap;
 }
 
 .project-tag:hover {
@@ -3091,16 +3124,26 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--light-black);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-content {
     position: relative;
-    padding: 1.2rem;
+    padding: 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1));
-    gap: 0.8rem;
+    gap: 1rem;
+    min-height: 200px;
 }
 
 .project-links {
@@ -3112,25 +3155,25 @@ footer {
 }
 
 .project-link {
-    color: var(--light-black);
-    font-size: 1.2rem;
+    color: var(--black);
+    font-size: 1.4rem;
     padding: 0.8rem;
     border-radius: 50%;
-    background: #f8f8f8;
+    background: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    width: 45px;
-    height: 45px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-link:hover {
     color: var(--violet);
     transform: translateY(-3px);
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .project-content {
@@ -3150,9 +3193,9 @@ footer {
 
 .project-tags {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
     justify-content: flex-start;
     align-items: center;
@@ -3161,16 +3204,17 @@ footer {
 .project-tag {
     background-color: #f5f5f5;
     color: var(--light-black);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
     font-size: 0.85rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     transition: all 0.3s ease;
     margin: 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    white-space: nowrap;
 }
 
 .project-tag:hover {

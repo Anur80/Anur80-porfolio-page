@@ -111,7 +111,7 @@ function renderContactPage() {
                 <div class="contact-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
                     <div class="contact-left" style="display: flex; flex-direction: column; gap: 2rem;">
                         <div class="contact-image" style="width: 100%; margin-bottom: 1rem;">
-                            <img src="./Projects/contact banner.jpg" alt="Contact Image" style="width: 100%; height: auto; border-radius: 8px;">
+                            <img src="./Projects/contact image.jpg" alt="Contact Image" style="width: 100%; height: auto; border-radius: 8px;">
                         </div>
                         <div class="contact-info" style="margin-bottom: 1rem;">
                             <h3 style="color: var(--black); margin-bottom: 0.5rem;">Anur Mayiik</h3>
@@ -257,146 +257,150 @@ function renderServicesPage() {
 }
 
 // Function to render the projects page
-function renderProjectsPage() {
-    let projectsSection = document.getElementById('projects-section');
+// function renderProjectsPage() {
+//     let projectsSection = document.getElementById('projects-section');
     
-    if (!projectsSection) {
-        projectsSection = document.createElement('section');
-        projectsSection.id = 'projects-section';
-        projectsSection.className = 'projects-section';
+//     if (!projectsSection) {
+//         projectsSection = document.createElement('section');
+//         projectsSection.id = 'projects-section';
+//         projectsSection.className = 'projects-section';
         
-        projectsSection.innerHTML = `
-            <div class="projects-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
-                <div class="projects-header" style="text-align: center; margin-bottom: 3rem;">
-                    <h1>PROJECTS</h1>
-                    <h2>My Recent Work</h2>
-                    <p>Here are some of the projects I've worked on recently</p>
-                </div>
+//         projectsSection.innerHTML = `
+//             <div class="projects-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+//                 <div class="projects-header" style="text-align: center; margin-bottom: 3rem;">
+//                     <h1>PROJECTS</h1>
+//                     <h2>My Recent Work</h2>
+//                     <p>Here are some of the projects I've worked on recently</p>
+//                 </div>
                 
-                <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                    <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                        <div style="height: 200px; overflow: hidden;">
-                            <img src="./Projects/Gillingham Online shop banner.png" alt="E-commerce Project" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <h3 style="margin-bottom: 1rem;">E-commerce Website</h3>
-                            <p style="margin-bottom: 1rem;">A full-featured online shop with product management, cart functionality, and secure checkout.</p>
-                            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
+//                 <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+//                     <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+//                         <div style="height: 200px; overflow: hidden;">
+//                             <img src="./Projects/Gillingham Online shop banner.png" alt="E-commerce Project" style="width: 100%; height: 100%; object-fit: cover;">
+//                         </div>
+//                         <div style="padding: 1.5rem;">
+//                             <h3 style="margin-bottom: 1rem;">E-commerce Website</h3>
+//                             <p style="margin-bottom: 1rem;">A full-featured online shop with product management, cart functionality, and secure checkout.</p>
+//                             <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
+//                             </div>
+//                             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
+//                             </div>
+//                         </div>
+//                     </div>
                     
-                    <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                        <div style="height: 200px; overflow: hidden;">
-                            <img src="./Projects/About page UI design.png" alt="Portfolio Website" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <h3 style="margin-bottom: 1rem;">Portfolio Website</h3>
-                            <p style="margin-bottom: 1rem;">A modern portfolio website showcasing projects and services with a clean, responsive design.</p>
-                            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
+//                     <div class="project-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+//                         <div style="height: 220px; overflow: hidden; position: relative;">
+//                             <img src="./Projects/About page UI design.png" alt="Portfolio Website" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+//                         </div>
+//                         <div style="padding: 1.8rem;">
+//                             <h3 style="margin-bottom: 1.2rem; font-size: 1.4rem; color: #333;">Portfolio Website</h3>
+//                             <p style="margin-bottom: 1.5rem; color: #666; line-height: 1.6;">A modern portfolio website showcasing projects and services with a clean, responsive design.</p>
+//                             <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.5rem;">
+//                                 <span style="background: #f8f9fa; padding: 0.6rem 1rem; border-radius: 20px; font-size: 0.9rem; display: flex; align-items: center; transition: transform 0.2s ease;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.5rem;"></i>HTML5</span>
+//                                 <span style="background: #f8f9fa; padding: 0.6rem 1rem; border-radius: 20px; font-size: 0.9rem; display: flex; align-items: center; transition: transform 0.2s ease;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.5rem;"></i>CSS3</span>
+//                                 <span style="background: #f8f9fa; padding: 0.6rem 1rem; border-radius: 20px; font-size: 0.9rem; display: flex; align-items: center; transition: transform 0.2s ease;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.5rem;"></i>JavaScript</span>
+//                             </div>
+//                             <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #eee;">
+//                                 <a href="#" style="color: #673AB7; font-size: 1.3rem; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;" title="View Live Demo"><i class="fas fa-external-link-alt"></i><span style="font-size: 0.9rem;">Live Demo</span></a>
+//                                 <a href="#" style="color: #673AB7; font-size: 1.3rem; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;" title="View on GitHub"><i class="fab fa-github"></i><span style="font-size: 0.9rem;">Source</span></a>
+//                             </div>
+//                         </div>
+//                     </div>
 
-                    <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                        <div style="height: 200px; overflow: hidden;">
-                            <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <h3 style="margin-bottom: 1rem;">Blog Platform</h3>
-                            <p style="margin-bottom: 1rem;">A dynamic blog platform with user authentication, comment system, and rich text editing capabilities.</p>
-                            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
+//                     <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+//                         <div style="height: 200px; overflow: hidden;">
+//                             <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
+//                         </div>
+//                         <div style="padding: 1.5rem;">
+//                             <h3 style="margin-bottom: 1rem;">Blog Platform</h3>
+//                             <p style="margin-bottom: 1rem;">A dynamic blog platform with user authentication, comment system, and rich text editing capabilities.</p>
+//                             <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
+//                             </div>
+//                             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
+//                             </div>
+//                         </div>
+//                     </div>
 
-                    <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                        <div style="height: 200px; overflow: hidden;">
-                            <img src="./Projects/download.jpg" alt="Task Manager" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <h3 style="margin-bottom: 1rem;">Task Manager</h3>
-                            <p style="margin-bottom: 1rem;">A comprehensive task management application with drag-and-drop functionality and progress tracking.</p>
-                            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
+//                     <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+//                         <div style="height: 200px; overflow: hidden;">
+//                             <img src="./Projects/download.jpg" alt="Task Manager" style="width: 100%; height: 100%; object-fit: cover;">
+//                         </div>
+//                         <div style="padding: 1.5rem;">
+//                             <h3 style="margin-bottom: 1rem;">Task Manager</h3>
+//                             <p style="margin-bottom: 1rem;">A comprehensive task management application with drag-and-drop functionality and progress tracking.</p>
+//                             <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
+//                             </div>
+//                             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
+//                             </div>
+//                         </div>
+//                     </div>
                     
-                    <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                        <div style="height: 200px; overflow: hidden;">
-                            <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <h3 style="margin-bottom: 1rem;">Blog Platform</h3>
-                            <p style="margin-bottom: 1rem;">A feature-rich blog platform with content management system, user authentication, and markdown support.</p>
-                            <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
+//                     <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+//                         <div style="height: 200px; overflow: hidden;">
+//                             <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
+//                         </div>
+//                         <div style="padding: 1.5rem;">
+//                             <h3 style="margin-bottom: 1rem;">Blog Platform</h3>
+//                             <p style="margin-bottom: 1rem;">A feature-rich blog platform with content management system, user authentication, and markdown support.</p>
+//                             <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
+//                             </div>
+//                             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
+//                             </div>
+//                         </div>
+//                     </div>
                     
-                    <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                        <div style="height: 200px; overflow: hidden;">
-                            <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <h3 style="margin-bottom: 1rem;">Blog Platform</h3>
-                            <p style="margin-bottom: 1rem;">A custom blog platform with content management system and user authentication.</p>
-                            <div style="display: flex; gap: 1.5rem;">
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-vuejs" style="color: #41B883; margin-right: 0.3rem;"></i>Vue.js</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-node-js" style="color: #339933; margin-right: 0.3rem;"></i>Express</span>
-                                <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fas fa-database" style="color: #00758F; margin-right: 0.3rem;"></i>MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+//                     <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+//                         <div style="height: 200px; overflow: hidden;">
+//                             <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
+//                         </div>
+//                         <div style="padding: 1.5rem;">
+//                             <h3 style="margin-bottom: 1rem;">Blog Platform</h3>
+//                             <p style="margin-bottom: 1rem;">A custom blog platform with content management system and user authentication.</p>
+//                             <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
+//                                 <span style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px; font-size: 0.9rem;"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
+//                             </div>
+//                             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View Live Demo"><i class="fas fa-external-link-alt"></i></a>
+//                                 <a href="#" style="color: #333; font-size: 1.2rem; transition: color 0.3s ease;" title="View on GitHub"><i class="fab fa-github"></i></a>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
                 
-                <div style="text-align: center; margin-top: 3rem;">
-                    <button onclick="window.location.href='#'" style="background: white; color: #673AB7; padding: 0.75rem 2rem; border: 1px solid #673AB7; border-radius: 4px; cursor: pointer; font-weight: 300; transition: all 0.3s ease; width: 6cm;">View More →</button>
-                </div>
-            </div>
-        `;
+//                 <div style="text-align: center; margin-top: 3rem;">
+//                     <button onclick="window.location.href='#'" style="background: white; color: #673AB7; padding: 0.75rem 2rem; border: 1px solid #673AB7; border-radius: 4px; cursor: pointer; font-weight: 300; transition: all 0.3s ease; width: 6cm;">View More →</button>
+//                 </div>
+//             </div>
+//         `;
         
-        mainContainer.appendChild(projectsSection);
-    }
+//         mainContainer.appendChild(projectsSection);
+//     }
     
-    projectsSection.style.display = 'block';
-    projectsSection.scrollIntoView({ behavior: 'smooth' });
-}
+//     projectsSection.style.display = 'block';
+//     projectsSection.scrollIntoView({ behavior: 'smooth' });
+// }
 
 // Function to render the blog page
 function renderBlogPage() {
@@ -500,9 +504,9 @@ function renderAboutPage() {
                     <div style="margin-bottom: 2rem;">
                         <h2 style="font-family: Montserrat, sans-serif; font-weight: bold; border-bottom: 1px solid #333; display: inline-block; padding-bottom: 0.5rem;">About Me</h2>
                     </div>
-                    <h3 style="font-family: Montserrat, sans-serif; margin-bottom: 2rem; font-weight: 400; line-height: 1.6; padding: 1rem; background-color: #f8f8f8; border-left: 4px solid var(--violet);">I am a passionate Junior Developer and Brandist with expertise in creating engaging web experiences and compelling brand identities. My approach combines technical precision with creative innovation to deliver solutions that make a lasting impact.</h3>
+                    <h3 style="font-family: Montserrat, sans-serif; margin-bottom: 2rem; font-weight: 400; line-height: 1.6; padding: 1rem; background-color: #f8f8f8; border-left: 4px solid var(--violet);">I am a dedicated Junior Developer and Brandist passionate about crafting engaging web experiences and powerful brand identities. With expertise in coding and design, I create websites that are both visually appealing and highly functional. My approach blends technical precision with creative innovation to deliver solutions that captivate and connect with audiences. I focus on building intuitive interfaces and cohesive branding strategies that leave a lasting impact. By embracing collaboration and refining ideas iteratively, I ensure every project achieves excellence. I am driven by the intersection of technology and creativity, always seeking new ways to push boundaries and inspire.</h3>
                     <div style="display: flex; gap: 1rem;">
-                        <button style="padding: 1rem 2rem; background: white; border: 1px solid #333; border-radius: 5px; font-family: Montserrat, sans-serif; cursor: pointer;">Resume →</button>
+                        <a href="https://drive.google.com/file/d/1PWmG7Ar5JET8-2CKjO8Ea_r321z1m4Wf/view?usp=drive_link" target="_blank" style="text-decoration: none;"><button style="padding: 1rem 2rem; background: white; border: 1px solid #333; border-radius: 5px; font-family: Montserrat, sans-serif; cursor: pointer;">Resume →</button></a>
                         <button style="padding: 1rem 2rem; background: white; border: 1px solid #333; border-radius: 5px; font-family: Montserrat, sans-serif; cursor: pointer;">Biography →</button>
                     </div>
                 </div>
