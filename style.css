@@ -496,7 +496,6 @@ footer {
     margin-top: 2rem;
 }
 
-
 .project-card {
     background-color: var(--white);
     border-radius: 12px;
@@ -631,6 +630,44 @@ footer {
     background-color: #f7df1e;
     color: black;
 }
+
+/* ...existing code... */
+.view-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.view-more-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--violet);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(138, 43, 226, 0.08);
+    transition: background  0.3s, box-shadow 0.3s, transform 0.2s;
+    gap: 0.7rem;
+}
+    /* view more button */
+.view-more-btn i {
+    font-size: 1.1em;
+    transition: transform 0.2s;
+}
+
+.view-more-btn:hover {
+    background: #a96dff;
+    box-shadow: 0 4px 16px rgba(138, 43, 226, 0.15);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.view-more-btn:hover i {
+    transform: translateX(5px);
+}
+
 
 /* About Page Styles */
 .about-section {
@@ -966,6 +1003,7 @@ footer {
     }
 
     .skills h2 {
+        font-size: 
         font-size: 1.8rem;
     }
 }
