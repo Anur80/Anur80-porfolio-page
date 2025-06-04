@@ -162,20 +162,16 @@ function renderContactPage() {
         const contactForm = document.getElementById('contact-form');
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Simple validation
-            if (name && email && message) {
-                // Show success message
-                alert(`Thank you ${name} for your message! I will get back to you soon at ${email}.`);
-                contactForm.reset();
-            } else {
-                alert('Please fill out all required fields.');
-            }
+
+            // Send form using EmailJS
+            emailjs.sendForm('21500012075', 'template_py8drbr', contactForm)
+                .then(function() {
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                }, function(error) {
+                    alert('Oops! Something went wrong. Please try again later.');
+                    console.error('EmailJS error:', error);
+                });
         });
     }
     
@@ -368,7 +364,7 @@ function renderServicesPage() {
 //                             </div>
 //                         </div>
 //                     </div>
-                    
+
 //                     <div class="project-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 //                         <div style="height: 200px; overflow: hidden;">
 //                             <img src="./Projects/Paint background.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
