@@ -3,184 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anur | FullStack Developer | Digital Markerter & Designer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Anur80</title>
+    <link rel="stylesheet" href="./style.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <meta property="og:title" content="Anur's Portfolio" />
-    <meta property="og:description" content="A modern, responsive portfolio showcasing Anur's projects, skills, and experiences." />
+    <link rel="icon" type="image/png" href="./Assets/My portfolio logo.png" style="border-radius: 50%;">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Anur80 - Portfolio" />
+    <meta property="og:description" content="Portfolio of Anur80, a Junior Full Stack Developer and digital brand strategist specializing in UI design, web development, and brand strategy." />
+    <meta property="og:image" content="./Assets/My_Profile-removebg-preview.png" />
+    <meta property="og:url" content="https://anur80.github.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://anur80-porfolio-page.vercel.app/" />
-    <meta property="og:image" content="https://your-portfolio-url.com/Projects/portfolio%20banner.png" />
-    <meta property="og:site_name" content="Anur's Portfolio" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Anur's Portfolio" />
-    <meta name="twitter:description" content="A modern, responsive portfolio showcasing Anur's projects, skills, and experiences." />
-    <meta name="twitter:image" content="https://your-portfolio-url.com/Projects/portfolio%20banner.png" />
 </head>
 <body>
-    <!-- Header -->
+    <!-- Home Page -->
+    <!-- Header Navigation -->
     <header>
-        <img src="My_portfolio_logo-removebg-preview.png" alt="Anur Logo" class="logo">
-        <button class="nav-toggle" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="nav-container">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="/" data-page="home">HOME</a></li>
-                    <li><a href="/about" data-page="about">ABOUT</a></li>
-                    <li><a href="/services" data-page="services">SERVICES</a></li>
-                    <!-- <li><a href="/projects" data-page="projects">PROJECTS</a></li> -->
-                    <li><a href="/blog" data-page="blog">BLOG</a></li>
-                    <li><a href="/contact" data-page="contact">CONTACT</a></li>
-                </ul>
-                <div class="social-icons">
-                    <a href="https://github.com/Anur80" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/anur-mayiik-89a446311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/anuri_80?igsh=N21xdjluNjlrNnoy" fiaria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">
+                <img src="./Assets/My portfolio logo.png" alt="ANUR Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#blogs">BLOGS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/anur80" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/anur80" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/anuri_80" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="hero-left">
-                <h2>designer</h2>
+    <main>
+        <section id="home" class="hero">
+            <div class="left-content">
+                <h1>designer</h1>
                 <p>Product designer specializing in UI design & design systems, with expertise in graphic design, digital marketing, and building high-converting e-commerce experiences.</p>
-                <a href="#project" class="cta-button">
-                    View My Work <i class="fas fa-arrow-right"></i>
-                </a>
             </div>
-            
-            <div class="hero-center">
-                <div class="hero-image-container">
-                    <img src="./Projects/My_Profile-removebg-preview.png" alt="Anur Icon " class="hero-image image-foreground">
-                </div>
+            <div class="center-content">
+                <img src="./Assets/My_Profile-removebg-preview.png" alt="Profile Picture">
             </div>
-            
-            <div class="hero-right">
-                <h2>&lt;coder&gt;</h2>
+            <div class="right-content">
+                <h1>&lt;coder&gt;</h1>
                 <p>Front-end developer dedicated to writing elegant, efficient, and maintainable code for exceptional user experiences.</p>
             </div>
+        </section>
+    <!-- About Page -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">about me.</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Junior Full Stack Developer and digital brand strategist, passionate about using technology to bring ideas to life. I thrive on innovation, continuously learning and refining my skills to create seamless digital experiences. My portfolio reflects my ability to merge development, design, and branding into impactful, user-centric solutions that drive meaningful engagement.</p>
+                    <div class="about-buttons">
+                        <a href="#" class="btn-resume">Resume</a>
+                        <a href="#" class="btn-biography">Biography</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./Assets/coder.jpg" alt="Profile Picture">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Main Section (Projects) -->
-    <section class="main-section" id="project">
-        <div class="section-heading">
+        <!-- Skills Page -->
+        <section id="skills" class="skills-section">
+            <h3 class="skills-heading">Skills</h3>
+            <div class="skills-content-container">
+                <div class="skills-developer-box">
+                    <h4 class="skills-category-heading">What I can Do as A developer</h4>
+                    <div class="skills-item-grid">
+                        <span class="skills-item-tag"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="skills-item-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="skills-item-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skills-item-tag"><i class="fab fa-react"></i> React.js</span>
+                        <span class="skills-item-tag"><i class="fab fa-css3"></i> Tailwind CSS</span>
+                        <span class="skills-item-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                    </div>
+                </div>
+                <div class="skills-brandist-box">
+                    <h4 class="skills-category-heading">What I can Do as A brandist</h4>
+                    <div class="skills-item-grid">
+                        <span class="skills-item-tag"><i class="fas fa-pencil-ruler"></i> Graphic Design</span>
+                        <span class="skills-item-tag"><i class="fas fa-desktop"></i> UI/UX Design</span>
+                        <span class="skills-item-tag"><i class="fas fa-bullseye"></i> Brand Strategy</span>
+                        <span class="skills-item-tag"><i class="fas fa-chart-line"></i> Digital Marketing</span>
+                        <span class="skills-item-tag"><i class="fas fa-search"></i> SEO Optimization</span>
+                        <span class="skills-item-tag"><i class="fas fa-shopping-cart"></i> E-commerce</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
             <h2>SOME OF MY RECENT PROJECTS</h2>
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-project-name="E-Commerce Website">
+                    <img src="./Assets/project banners/e-Commerce.png" alt="Project Image 1">
+                    <div class="project-tech">HTML, CSS, JavaScript, React</div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn-demo">Live Demo</a>
+                        <a href="#" class="project-btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-project-name="Huddle Landing Page">
+                    <img src="./Assets/project banners/huddle landing page.png" alt="Project Image 2">
+                    <div class="project-tech">HTML, CSS, Tailwind</div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn-demo">Demo</a>
+                        <a href="#" class="project-btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-project-name="KKM Resource Tracker">
+                    <img src="./Assets/project banners/Kkm resource tracker.png" alt="Project Image 3">
+                    <div class="project-tech">React, Node.js, Express</div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn-demo">Demo</a>
+                        <a href="#" class="project-btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-project-name="Portfolio Website">
+                    <img src="./Assets/project banners/portfolio banner.png" alt="Project Image 4">
+                    <div class="project-tech">HTML, CSS, JavaScript</div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn-demo">Demo</a>
+                        <a href="#" class="project-btn-github">GitHub</a>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="viewmore-btn">
+                <a href="https://github.com/anur80" class="view-more">View More Projects→</a>
+            </div>
+        </section>
+        
+        <!-- Blog Page -->
+        <section id="blogs" class="blogs">
+            <h2>SOME OF MY BLOGS</h2>
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Blog 1">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Design Systems: Why They Matter</h3>
+                        <p class="blog-desc">A look at how design systems streamline UI/UX and boost team productivity.</p>
+                        <a href="#" class="blog-readmore">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Blog 2">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Getting Started with React</h3>
+                        <p class="blog-desc">Beginner tips and resources for building your first React app.</p>
+                        <a href="#" class="blog-readmore">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Blog 3">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Branding for Developers</h3>
+                        <p class="blog-desc">How developers can build a personal brand and stand out online.</p>
+                        <a href="#" class="blog-readmore">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="contact-section">
+    <h2 class="contact-title">Send me a message!</h2>
+    <p class="contact-subtitle">
+        Got a question or proposal, or just want<br>
+        to say hello? Go ahead.
+    </p>
+    <form class="contact-form">
+        <div class="contact-row">
+            <div class="contact-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off">
+            </div>
+            <div class="contact-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="off">
+            </div>
         </div>
-        <div class="projects-grid">
-            <!-- Project Card 1 -->
-            <div class="project-card">
-                <div class="project-img"> <img src="./Projects/Huddle banner.png" alt="Project 1 image"></div>
-                <div class="project-content">
-                    <h3>huddle-landing-page</h3>
-                    <p>As my first project as a junior developer, I built a responsive landing page for Huddle, a fictional community platform, using pure HTML and CSS. The design focuses on clean aesthetics and intuitive layout principles.</p>
-                    <div class="project-tags">
-                        <span class="project-tag"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                        <span class="project-tag"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                        <span class="project-tag"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://huddle-landing-page-roan-five.vercel.app/" class="project-link" title="View Live Demo">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/Anur80/huddle-landing-page.git" class="project-link" title="View Code">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 2 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./Projects/lemaya banner.png" alt="Lemaya banner">
-                </div>
-                <div class="project-content">
-                    <h3>Lemaya School Website</h3>
-                    <p>A comprehensive wellness application with atlernating UI/UX showing mission and vision. It contains all details about Lemaya School.</p>
-                    <div class="project-tags">
-                        <span class="project-tag"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                        <span class="project-tag"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                        <span class="project-tag"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://lemaya.vercel.app/" class="project-link" title="View Live Demo">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/Anur80/Lemaya.git" class="project-link" title="View Code">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 3 -->
-            <div class="project-card">
-                <div class="project-img">
-    <img src="./Projects/portfolio banner.png" alt="Portfolio banner">
-</div>
-                <div class="project-content">
-                    <h3>Anur's Portfolio</h3>
-                    <p>A responsive, modern portfolio showcasing my projects, skills and experiences. It featured smooth animations, clean ui and multiple pages.</p>
-                    <div class="project-tags">
-                        <span class="project-tag"><i class="fab fa-html5" style="color: #e34c26; margin-right: 0.3rem;"></i>HTML5</span>
-                        <span class="project-tag"><i class="fab fa-css3-alt" style="color: #264de4; margin-right: 0.3rem;"></i>CSS3</span>
-                        <span class="project-tag"><i class="fab fa-js" style="color: #f7df1e; margin-right: 0.3rem;"></i>JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://anur80-porfolio-page.vercel.app/" class="project-link" title="View Live Demo">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/Anur80/Anur80-porfolio-page.git" class="project-link" title="View Code">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- project call to action button -->
-
-        <div class="view-more-container">
-            <a href="https://github.com/Anur80" class="view-more-btn" target="_blank" rel="noopener">
-                View More <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p class="copyright">&copy;Anur80.All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="/about" data-page="about">about</a></li>
-                <!-- <li><a href="/projects" data-page="projects">projects</a></li> -->
-                <li><a href="/blog" data-page="blog">blog</a></li>
-                <li><a href="/contact" data-page="contact">contact</a></li>
-            </ul>
-            <div class="footer-social">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-               
+        <div class="contact-row">
+            <div class="contact-field full-width">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="3" placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"></textarea>
             </div>
         </div>
-    </footer>
-
-    <script src="./script.js"></script>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("21500012075"); 
-  })();
-</script>
+        <button type="submit" class="contact-submit">
+            SHOOT <span class="arrow">⟶</span>
+        </button>
+    </form>
+</section>
+</main>
+    <!-- Footer
+    <footer class="footer">
+        <p>©Anur80.All rights reserved.</p>
+        <div class="footer-arrow">
+            <img src="./assets/arrow-icon.png" alt="Arrow">
+        </div>
+        <div class="footer-links">
+            <div class="nav-links">
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="social-links">
+                
+            </div>
+        </div>
+    </footer> -->
 </body>
 </html>
-
